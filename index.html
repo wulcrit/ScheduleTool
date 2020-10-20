@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedule Helper</title>
+</head>
+<body>
+  <style>
+    body{
+      margin: 0 auto;
+      background-color: rgb(17, 16, 16);
+    }
+    h1{
+      color: white;
+      text-align: center;
+    }
+
+    .options{
+      color: white;
+      position: relative;
+      padding-left: 100px;
+    }
+    .options input{
+      position: relative;
+      left: 10px;
+      width: 90px;
+      height: 10px;
+    }
+    .options option{
+      color:black;
+      position: relative;
+      width: 100px;
+    }
+    .options select{
+      color: black;
+      position: relative;
+      width: 100px;
+      height: 20px;
+    }
+    #logBtn{
+      position: relative;
+      left: 190px;
+      top: 30px;
+    }
+    #user option{
+      color: black;
+    }
+    option{
+      color: black;
+    }
+    </style>
+
+  <h1>Schedule Helper</h1>
+
+  <div class="options">
+    Choose User
+    <select name="userSelect" id="user">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      
+    </select>
+    <br>
+    <br>
+    Password
+    <input type="text" id="passfield" maxlength="4">
+  </div>
+  <button id="logBtn">
+    Login 
+  </button>
+
+  <script>
+    let user=document.querySelector("#user")
+    let pass=document.querySelector("#passfield")
+    let logBtn=document.querySelector("#logBtn")
+    logBtn.addEventListener('click',evaluatePass);
+    function evaluatePass(){
+      if(user==pass){
+
+      }
+    }
+  </script>
+
+
+</body>
+</html>
